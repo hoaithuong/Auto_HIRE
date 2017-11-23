@@ -3,7 +3,7 @@ import time
 
 URL = "https://stg01.trinethire-ops.com/users/invitations"
 NAME = "Hoai Thuong"
-FEMAIL = "lovethuong"
+FEMAIL = "minhthuong"
 LEMAIL = "@trinetqa.com"
 PHONE = "435"
 TITLE = "Admin"

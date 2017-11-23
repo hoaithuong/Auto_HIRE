@@ -5,8 +5,8 @@ from Job import createjob
 
 def main():
     login()
-    createmanylocations()
-    invitemanyusres()
-    #createjob()
+    #createmanylocations()
+    #invitemanyusres()
+    createjob()
 
 main()
