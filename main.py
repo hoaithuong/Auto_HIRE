@@ -1,8 +1,12 @@
 from Login import login
-from Location import createfive
+from Location import createmanylocations
+from InviteUser import invitemanyusres
+from Job import createjob
 
 def main():
     login()
-    createfive()
+    createmanylocations()
+    invitemanyusres()
+    #createjob()
 
 main()

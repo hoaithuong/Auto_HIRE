@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-CHROMEDRIVER = "D:\\Selenium\\chromedriver.exe"
+CHROMEDRIVER = "D:\\Data - Thuong\\AUTO\\SELENIUM\\chromedriver_win32\\chromedriver.exe"
 URL = 'https://stg01.trinethire-ops.com/users/sign_in'
 USERNAME = 'thuongtest1000@trinetqa.com'
 PASSWORD = '12345!@#$%'
