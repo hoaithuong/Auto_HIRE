@@ -1,8 +1,8 @@
-from Login import drive
+from Login import driver
 import time
 
 URL = "https://stg01.trinethire-ops.com/admin/locations"
-NAME = "VN"
+NAME = "TQ"
 ADDRESS = "US"
 CITY = "US"
 STATE = "US"
@@ -12,31 +12,31 @@ OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
 
 def createlocation(n=1):
-    drive.get(URL)
-    drive.implicitly_wait(20)
+    driver.get(URL)
+    driver.implicitly_wait(20)
 
-    drive.find_element_by_id("add-location").click()
+    driver.find_element_by_id("add-location").click()
     time.sleep(0.5)
 
-    drive.find_element_by_id("location_name").send_keys(NAME+ ' ' + str(n).rjust(5, '0'))
+    driver.find_element_by_id("location_name").send_keys(NAME+ ' ' + str(n).rjust(5, '0'))
     time.sleep(0.5)
 
-    drive.find_element_by_id("location_address").send_keys(ADDRESS)
+    driver.find_element_by_id("location_address").send_keys(ADDRESS)
     time.sleep(0.5)
 
-    drive.find_element_by_id("location_city").send_keys(CITY)
+    driver.find_element_by_id("location_city").send_keys(CITY)
     time.sleep(0.5)
 
-    drive.find_element_by_id("location_state").send_keys(STATE)
+    driver.find_element_by_id("location_state").send_keys(STATE)
     time.sleep(0.5)
 
-    drive.find_element_by_id("location_country").send_keys(COUNTRY)
+    driver.find_element_by_id("location_country").send_keys(COUNTRY)
     time.sleep(0.5)
 
-    drive.find_element_by_id("location_zip_code").send_keys(ZIP)
+    driver.find_element_by_id("location_zip_code").send_keys(ZIP)
     time.sleep(0.5)
 
-    drive.find_element_by_class_name("btn-positive").click()
+    driver.find_element_by_class_name("btn-positive").click()
     time.sleep(0.5)
 
     #drive.get_screenshot_as_file(OUTPUT + 'Location.png')
@@ -44,4 +44,4 @@ def createlocation(n=1):
 def createmanylocations():
     for x in range(1, 5):
         createlocation(x)
-        drive.implicitly_wait(1)
+        driver.implicitly_wait(1)

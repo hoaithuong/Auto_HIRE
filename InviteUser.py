@@ -1,42 +1,43 @@
-from Login import drive
+from Login import driver
 import time
 
 URL = "https://stg01.trinethire-ops.com/users/invitations"
 NAME = "Hoai Thuong"
-FEMAIL = "minhthuong"
+FEMAIL = "linhthuong"
 LEMAIL = "@trinetqa.com"
 PHONE = "435"
 TITLE = "Admin"
 OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
-
+# Invite one user
 def inviteuser(n=1):
-    drive.get(URL)
-    drive.implicitly_wait(20)
+    driver.get(URL)
+    driver.implicitly_wait(20)
 
-    drive.find_element_by_id("invite-user-button").click()
+    driver.find_element_by_id("invite-user-button").click()
     time.sleep(0.5)
 
-    drive.find_element_by_id("user_invitation_full_name").send_keys(NAME + ' ' + str(n).rjust(5, '0'))
+    driver.find_element_by_id("user_invitation_full_name").send_keys(NAME + ' ' + str(n).rjust(5, '0'))
     time.sleep(0.5)
 
-    drive.find_element_by_id("user_invitation_email").send_keys(FEMAIL + str(n).rjust(5, '0') + LEMAIL)
+    driver.find_element_by_id("user_invitation_email").send_keys(FEMAIL + str(n).rjust(5, '0') + LEMAIL)
     time.sleep(0.5)
 
-    drive.find_element_by_id("user_invitation_phone").send_keys(PHONE + str(n).rjust(7, '0'))
+    driver.find_element_by_id("user_invitation_phone").send_keys(PHONE + str(n).rjust(7, '0'))
     time.sleep(0.5)
 
-    drive.find_element_by_id("user_invitation_title").send_keys(TITLE)
+    driver.find_element_by_id("user_invitation_title").send_keys(TITLE)
     time.sleep(0.5)
 
-    drive.find_element_by_xpath('//span[contains(text(),"Admin")]').click()
+    driver.find_element_by_xpath('//span[contains(text(),"Admin")]').click()
 
-    drive.find_element_by_class_name("btn-positive").click()
+    driver.find_element_by_class_name("btn-positive").click()
     time.sleep(0.5)
 
-    #drive.get_screenshot_as_file(OUTPUT + 'Invite.png')
+    #driver.get_screenshot_as_file(OUTPUT + 'Invite.png')
 
+# Invite many user (4 users)
 def invitemanyusres():
     for x in range (1, 5):
         inviteuser(x)
-        drive.implicitly_wait(20)
+        driver.implicitly_wait(20)
