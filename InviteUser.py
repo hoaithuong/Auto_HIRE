@@ -9,7 +9,7 @@ PHONE = "435"
 TITLE = "Admin"
 OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
-# Invite one user
+# Invite one User
 def inviteuser(n=1):
     driver.get(URL)
     driver.implicitly_wait(20)
@@ -36,8 +36,8 @@ def inviteuser(n=1):
 
     #driver.get_screenshot_as_file(OUTPUT + 'Invite.png')
 
-# Invite many user (4 users)
+# Invite many User
 def invitemanyusres():
-    for x in range (1, 5):
+    for x in range (5, 10):
         inviteuser(x)
         driver.implicitly_wait(20)

@@ -10,7 +10,7 @@ COUNTRY = "US"
 ZIP = "12345"
 OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
-
+# Create one Location
 def createlocation(n=1):
     driver.get(URL)
     driver.implicitly_wait(20)
@@ -41,7 +41,8 @@ def createlocation(n=1):
 
     #drive.get_screenshot_as_file(OUTPUT + 'Location.png')
 
+# Create many Locations
 def createmanylocations():
-    for x in range(1, 5):
+    for x in range(5, 10):
         createlocation(x)
         driver.implicitly_wait(1)

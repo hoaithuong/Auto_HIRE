@@ -7,7 +7,7 @@ DESCRIPTION = "JOB"
 SALARY = "12"
 OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
-# Create one job
+# Create one Job
 def createjob(n=1):
     driver.get(URL)
     driver.implicitly_wait(20)
@@ -57,8 +57,8 @@ def createjob(n=1):
 
     #driver.get_screenshot_as_file(OUTPUT + 'Job.png')
 
-# Create many jobs (4 jobs)
+# Create many Jobs
 def createmanyjob():
-    for x in range (1, 5):
+    for x in range (5, 10):
         createjob(x)
         driver.implicitly_wait(20)

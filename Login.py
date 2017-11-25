@@ -1,7 +1,8 @@
 from selenium import webdriver
 
-CHROMEDRIVER = "D:\\Data - Thuong\\AUTO\\SELENIUM\\chromedriver_win32\\chromedriver.exe"
-#CHROMEDRIVER = "D:\\Selenium\\chromedriver.exe"
+# Get URL's Lcation
+# CHROMEDRIVER = "D:\\Data - Thuong\\AUTO\\SELENIUM\\chromedriver_win32\\chromedriver.exe"
+CHROMEDRIVER = "D:\\Selenium\\chromedriver.exe"
 
 URL = 'https://stg01.trinethire-ops.com/users/sign_in'
 USERNAME = 'thuongtest100@trinetqa.com'
@@ -12,6 +13,7 @@ driver = webdriver.Chrome(CHROMEDRIVER)
 driver.maximize_window()
 driver.set_page_load_timeout(30)
 
+# Login function
 def login():
     driver.get(URL)
     driver.implicitly_wait(20)
