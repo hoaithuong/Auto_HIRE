@@ -5,7 +5,7 @@ from selenium import webdriver
 CHROMEDRIVER = "D:\\Selenium\\chromedriver.exe"
 
 URL = 'https://stg01.trinethire-ops.com/users/sign_in'
-USERNAME = 'thuongtest100@trinetqa.com'
+USERNAME = 'thuongtest5@trinetqa.com'
 PASSWORD = '12345!@#$%'
 OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
