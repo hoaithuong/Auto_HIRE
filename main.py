@@ -10,7 +10,7 @@ def main():
     login()
     # createmanylocations()
     # invitemanyusres()
-    #createmanyjob()
+    # createmanyjob()
     # createmanytalents()
     # createmanytasks()
     createmanyevents()

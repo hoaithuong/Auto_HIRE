@@ -8,11 +8,11 @@ from Event import createevent
 
 def main():
     login()
-    createlocation()
-    inviteuser()
-    createjob()
-    createtalent()
+    # createlocation()
+    # inviteuser()
+    # createjob()
+    # createtalent()
     createtask()
-    createevent()
+    # createevent()
 
 main()

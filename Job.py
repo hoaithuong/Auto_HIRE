@@ -10,55 +10,69 @@ OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 
 # Create one Job
 def createjob(n=1):
+    # get URL
     driver.get(URL)
     driver.implicitly_wait(20)
 
+    # get id Job Title
     driver.find_element_by_id("job_name").send_keys(NAME+ ' ' + str(n).rjust(5, '0'))
     time.sleep(0.5)
 
+    # Scroll to down
     driver.execute_script("window.scrollTo(0, 800)")
     time.sleep(0.5)
 
+    # get id Number of Openings and click on first item
     driver.find_element_by_id("job_num_openings_chosen").click()
     time.sleep(0.5)
     driver.switch_to.active_element.send_keys('\t')
     time.sleep(0.5)
 
+    # get id Employment Type and click on first item
     driver.find_element_by_id("job_employment_type_chosen").click()
     time.sleep(0.5)
     driver.switch_to.active_element.send_keys('\t')
     time.sleep(0.5)
 
+    # get class Job Description
     driver.find_element_by_class_name("note-editable").send_keys(DESCRIPTION)
     time.sleep(0.5)
 
+    # Scroll to down
     driver.execute_script("window.scrollTo(0, 2000)")
     time.sleep(0.5)
 
+    # get id Location and click on first item
     driver.find_element_by_id("job_location_chosen").click()
     time.sleep(0.5)
     driver.switch_to.active_element.send_keys('\t')
     time.sleep(0.5)
 
+    # get id Experience Level and click on first item
     driver.find_element_by_id("job_experience_chosen").click()
     time.sleep(0.5)
     driver.switch_to.active_element.send_keys('\t')
     time.sleep(0.5)
 
+    # Scroll to down
     driver.execute_script("window.scrollTo(0, 3000)")
     time.sleep(0.5)
 
+    # get id Hiring Lead and click on first item
     driver.find_element_by_id("job_user_id_chosen").click()
     time.sleep(0.5)
     driver.switch_to.active_element.send_keys('\t')
     time.sleep(0.5)
 
+    # get id Salary
     driver.find_element_by_id("job_min_salary").send_keys(SALARY)
     time.sleep(0.5)
 
+    # get class Save Job button
     driver.find_element_by_class_name("create-job").click()
     time.sleep(0.5)
 
+    # Screenshot a picture
     #driver.get_screenshot_as_file(OUTPUT + 'Job.png')
 
 # Update a job
