@@ -102,6 +102,6 @@ def updatejob(n=1):
 
 # Create many Jobs
 def createmanyjob():
-    for x in range (5, 10):
+    for x in range (1, 5):
         createjob(x)
         driver.implicitly_wait(20)

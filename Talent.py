@@ -5,7 +5,7 @@ URL = "https://stg01.trinethire-ops.com/applications/new"
 TALENTURL = "https://stg01.trinethire-ops.com/talent_pools"
 FNAME = "Hoai"
 LNAME = "Thuong"
-FEMAIL = "kindthuong"
+FEMAIL = "kingthuong"
 LEMAIL = "@trinetqa.com"
 PHONE = "435"
 TITLE = "Admin"
@@ -78,6 +78,6 @@ def updatetalent(n=1):
 
 # Invite many Talents
 def createmanytalents():
-    for x in range (5, 10):
+    for x in range (1, 5):
         createtalent(x)
         driver.implicitly_wait(20)

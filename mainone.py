@@ -5,6 +5,10 @@ from Job import createjob
 from Talent import createtalent
 from Task import createtask
 from Event import createevent
+from Workflow import createworkflow
+from InterviewForm import createinterview
+from EmailTemplate import createtemplate
+from ApplicantQuestionnaire import createquestionnaires
 
 def main():
     login()
@@ -12,7 +16,11 @@ def main():
     # inviteuser()
     # createjob()
     # createtalent()
-    createtask()
+    # createtask()
     # createevent()
+    # createworkflow()
+    # createinterview()
+    # createtemplate()
+    createquestionnaires()
 
 main()

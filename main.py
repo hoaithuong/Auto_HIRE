@@ -10,9 +10,9 @@ def main():
     login()
     # createmanylocations()
     # invitemanyusres()
-    # createmanyjob()
-    # createmanytalents()
+    createmanyjob()
+    createmanytalents()
     # createmanytasks()
-    createmanyevents()
+    # createmanyevents()
 
 main()
