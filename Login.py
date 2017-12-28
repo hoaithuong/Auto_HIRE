@@ -6,7 +6,7 @@ import time
 CHROMEDRIVER = "D:\\Selenium\\chromedriver.exe"
 
 URL = 'https://stg01.trinethire-ops.com/users/sign_in'
-USERNAME = 'hi+thuong+18oct@trinetqa.com'
+USERNAME = 'hi1+thuong+28dec@trinetqa.com'
 PASSWORD = '12345!@#$%'
 OUTPUT = "C:\\Users\\Hoang\\PycharmProjects\\hireproject\\Screenshots\\"
 

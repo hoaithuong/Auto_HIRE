@@ -9,6 +9,8 @@ from Workflow import createworkflow
 from InterviewForm import createinterview
 from EmailTemplate import createtemplate
 from ApplicantQuestionnaire import createquestionnaires
+from EvaluationCriteria import updateevaluation
+from Category import createcategory
 
 def main():
     login()
@@ -21,6 +23,9 @@ def main():
     # createworkflow()
     # createinterview()
     # createtemplate()
-    createquestionnaires()
+    # createquestionnaires()
+    # updateevaluation()
+    createcategory()
+
 
 main()

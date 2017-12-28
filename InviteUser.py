@@ -2,8 +2,8 @@ from Login import driver
 import time
 
 URL = "https://stg01.trinethire-ops.com/users/invitations"
-NAME = "Hoai Thuong"
-FEMAIL = "linhthuong"
+NAME = "User"
+FEMAIL = "u"
 LEMAIL = "@trinetqa.com"
 PHONE = "435"
 TITLE = "Admin"
@@ -46,6 +46,6 @@ def inviteuser(n=1):
 
 # Invite many User
 def invitemanyusres():
-    for x in range (5, 10):
+    for x in range (1, 5):
         inviteuser(x)
         driver.implicitly_wait(20)

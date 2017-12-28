@@ -16,29 +16,15 @@ def createquestionnaires(n=1):
     time.sleep(0.5)
 
     # get class Select Question Type
-    driver.find_element_by_class_name("chosen-container-active").click()
+    driver.find_element_by_xpath('//*[@id="question_type_chosen"]').click()
     time.sleep(0.5)
-
-    # get Xpath item 1
-    driver.find_element_by_xpath('//*[@id="question_type_chosen"]/div/ul/li[1]').click()
-    time.sleep(0,5)
-
-    # get id Add Question button
-    driver.find_element_by_id("add_question").click()
+    driver.switch_to.active_element.send_keys('\t')
     time.sleep(0.5)
 
     # get class Question name for item 1
-    driver.find_element_by_class_name("question-name").send_keys(QUESTIONNAME)
+    driver.find_element_by_xpath('//*[@id="questions"]/div/div/input[1]').send_keys(QUESTIONNAME)
     time.sleep(0.5)
 
-    # get class Select Question Type
-    driver.find_element_by_class_name("chosen-container-active").click()
-    time.sleep(0.5)
-
-    # get Xpath item 2
-    driver.find_element_by_xpath('//*[@id="question_type_chosen"]/div/ul/li[2]').click()
-    time.sleep(0,5)
-
-    # get id Add Question button
-    driver.find_element_by_id("add_question").click()
+    # get id Submit button
+    driver.find_element_by_id("submitBtn").click()
     time.sleep(0.5)

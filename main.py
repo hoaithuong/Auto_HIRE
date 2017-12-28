@@ -5,13 +5,15 @@ from Job import createmanyjob
 from Talent import createmanytalents
 from Task import createmanytasks
 from Event import createmanyevents
+from Category import createmanycategories
 
 def main():
     login()
     # createmanylocations()
+    createmanycategories()
     # invitemanyusres()
-    createmanyjob()
-    createmanytalents()
+    # createmanyjob()
+    # createmanytalents()
     # createmanytasks()
     # createmanyevents()
 
